@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/otp.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+</head>
+
+<body background="https://mc-e5b0d581-4409-4340-bc8b-9266-cdn-endpoint.azureedge.net/-/media/global-system-images/defaultimages/itsa365-n-2760x1552-vorschaubild-video.jpg?w=1410&rev=58c4fcf5060f4a4ba242f54bc2cb2e0b&hash=7691253000199F2BBCCB375EB56E0A69">
+    <div class="otp-bg text-align d-flex flex-row">
+        <form action="/verify" method="post">
+            <label for="otp" class="otp">Enter OTP:</label>
+            <input type="text" name="otp"><br><br>
+            <input type="submit" value="Submit Otp">
+        </form>
+    </div>
+</body>
+
+</html>
